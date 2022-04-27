@@ -4,13 +4,14 @@
 // 9012 -> 12
 
 Console.Write("Введите число: "); 
-string Input = Console.ReadLine();
-
+int number = Convert.ToInt32(Console.ReadLine());
 int sum = 0;
 
-for (int count = 0; count < Input.Length; count++)
+while (number > 0)
 {
-    sum = sum + int.Parse(Input[count].ToString());
+    int reducingNumber = number % 10;
+    sum = sum + reducingNumber;
+    number = number / 10;
 }
 
-Console.WriteLine($"Сумма цифр числа {Input} равна {sum}");
+Console.Write($"Сумма цифр в числе равна {sum}");
