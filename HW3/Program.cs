@@ -17,7 +17,6 @@ Console.Write($"Вы ввели массив: ");
 
 WriteArray(array);
 
-
 void WriteArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
